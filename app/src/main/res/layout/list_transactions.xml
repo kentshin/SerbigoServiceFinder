@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:background="#FCF5EF"
+        android:padding="8dp">
+
+        <ImageButton
+            android:id="@+id/call2"
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/worker_photo"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button2"
+            android:elevation="2dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:src="@drawable/phone_icon" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/service_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/total_fee"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/status"
+            android:background="#E7CE82"
+            android:gravity="center"
+            android:text="Requesting..."
+            android:textAllCaps="false"
+            android:textColor="#F8F7F7"
+            android:textSize="10dp"
+            app:backgroundTint="#E7CE82" />
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/worker_photo"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/picprofile" />
+
+
+        <TextView
+            android:id="@+id/service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@+id/worker_photo"
+            android:fontFamily="@font/baloo_da"
+            android:text="Service :"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/service_provider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@id/service"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/worker_photo"
+            android:fontFamily="@font/baloo_da"
+            android:text="Worker :"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/fee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/service_provider"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/worker_photo"
+            android:fontFamily="@font/baloo_da"
+            android:text="Fee :       "
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fee"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/worker_photo"
+            android:fontFamily="@font/baloo_da"
+            android:gravity="center"
+            android:text="Status:"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/service_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@+id/service"
+            android:fontFamily="@font/baloo_da"
+            android:text="Service "
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_toLeftOf="@id/report_button"
+            android:fontFamily="sans-serif-medium"
+            android:text="date"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/report_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="-3dp"
+            android:adjustViewBounds="true"
+            android:background="#00FFFFFF"
+            android:elevation="5dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:src="@drawable/report" />
+
+
+        <TextView
+            android:id="@+id/service_provider_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/service_name"
+            android:layout_marginLeft="25dp"
+            android:layout_toRightOf="@+id/service_provider"
+            android:fontFamily="@font/baloo_da"
+            android:text="Service Provider "
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/total_fee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@id/service_provider_name"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/fee"
+            android:fontFamily="@font/baloo_da"
+            android:text="Total Fee"
+            android:textSize="14sp" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

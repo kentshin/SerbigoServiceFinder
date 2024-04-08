@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/aldrich</item>
+        <item>@font/baloo_da</item>
+        <item>@font/hammersmith_one</item>
+        <item>@font/imprima</item>
+        <item>@font/krona_one</item>
+        <item>@font/rubik_mono_one</item>
+    </array>
+</resources>

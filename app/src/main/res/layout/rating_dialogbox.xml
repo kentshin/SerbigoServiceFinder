@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/msgbox"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fcf5ef"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/baloo_da"
+        android:gravity="center"
+        android:text="Job done? Please rate the service."
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#7A7272"
+        android:textSize="18sp" />
+
+    <View
+        android:id="@+id/separator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/header"
+        android:layout_marginTop="5dp" />
+
+    <RatingBar
+        android:id="@+id/ratingsBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/separator"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:clickable="false"
+        android:progressTint="#F7A62E"
+        android:rating="0" />
+
+    <TextView
+        android:id="@+id/errorTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ratingsBar"
+        android:layout_centerHorizontal="true"
+        android:text="Something Went Wrong. Please Try Again"
+        android:visibility="gone" />
+
+
+    <EditText
+        android:id="@+id/reviewED"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/errorTV"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="#FCF5C4"
+        android:gravity="center"
+        android:hint="Please write your comment(Max 200 Characters)"
+        android:lines="5"
+        android:padding="7dp"
+        android:textColor="#633333"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/reviewED"
+        android:layout_gravity="center"
+        android:divider="@drawable/divider"
+        android:dividerPadding="10dp"
+        android:padding="5dp"
+        android:showDividers="middle"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button"
+            android:backgroundTint="#00c3ff"
+            android:fontFamily="@font/baloo_da"
+            android:text="Submit"
+            android:textColor="#FDFDFD"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button"
+            android:backgroundTint="#00c3ff"
+            android:fontFamily="@font/baloo_da"
+            android:text="Cancel"
+            android:textColor="#F8F7F7"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

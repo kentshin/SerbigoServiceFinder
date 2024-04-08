@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "936887702708",
+    "firebase_url": "https://serbigo-c852c.firebaseio.com",
+    "project_id": "serbigo-c852c",
+    "storage_bucket": "serbigo-c852c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:936887702708:android:56499bb7db5f0874c433e1",
+        "android_client_info": {
+          "package_name": "com.example.serbigo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "936887702708-9vuscefbq46t02684rjmq2ktiqui9r6t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.serbigo",
+            "certificate_hash": "58625712f4d65cc6e9586d787c168adbd1e0f0dc"
+          }
+        },
+        {
+          "client_id": "936887702708-2snvo09eg1jrts6ljudugiahto7adenq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8mcZYAveRxURlPKf66-eKxIv_TV4HHUA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "936887702708-2snvo09eg1jrts6ljudugiahto7adenq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
